@@ -1,0 +1,212 @@
+TYPES.XML
+======================================================= 
+ <!-- MRAP -->
+  <type name="MRAP_4x4">
+    <nominal>29</nominal>
+    <lifetime>3888000</lifetime>
+    <restock>0</restock>
+    <min>7</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+  </type>
+  <type name="mrap_wheel">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_driver">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_codriver">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_cargo1">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_cargo2">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_trunk">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_hood">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0"  crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+   
+PROFILES/TRADERS
+======================================================= 
+ <!-- MRAP -->  
+    <Category> Vehicles
+		MRAP_4x4,      				    V,      700000,  30000
+
+	<Category> Vehicle Parts
+        mrap_wheel,             		*,      225,   100
+        mrap_doors_driver,       		*,      225,   100
+        mrap_doors_codriver,       		*,      225,   100
+        mrap_doors_cargo1,          	*,      225,   100
+        mrap_doors_cargo2,          	*,      225,   100
+        mrap_doors_trunk,         		*,      225,   100
+		mrap_doors_hood,             	*,      225,   100
+
+PROFILES/TRADERS/VEHILCE PARTS
+======================================================= 
+<VehicleParts>	MRAP_4x4
+		SparkPlug
+		CarBattery
+		CarRadiator
+		HeadlightH7
+		HeadlightH7
+		CanisterGasoline
+                mrap_wheel
+                mrap_doors_driver
+                mrap_doors_codriver
+                mrap_doors_cargo1
+                mrap_doors_cargo2
+                mrap_doors_trunk
+		mrap_doors_hood
+
+CFGSPAWNABLETYPES.XML
+======================================================= 
+ <!-- MRAP -->  
+	<type name="MRAP_4x4">
+       <attachments chance="1.00">
+            <item name="SparkPlug" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments> 
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>     
+        <attachments chance="1.00">
+            <item name="CarRadiator" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="CarBattery" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="HeadlightH7" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="HeadlightH7" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_driver" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_codriver" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_cargo1" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_cargo2" chance="0.50" />
+        </attachments>         
+        <attachments chance="1.00">
+            <item name="mrap_doors_trunk" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_hood" chance="0.50" />
+        </attachments>
+    </type>
+	
+EVENTS.XML
+======================================================= 
+ <!-- MRAP --> 	
+	<event name="MRAP_4x4">
+        <nominal>10</nominal>
+        <min>7</min>
+        <max>13</max>
+        <lifetime>300</lifetime>
+        <restock>0</restock>
+        <saferadius>500</saferadius>
+        <distanceradius>500</distanceradius>
+        <cleanupradius>200</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="5" min="3" type="MRAP_4x4"/>
+        </children>
+    </event>	
+		
