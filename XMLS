@@ -1,7 +1,7 @@
 TYPES.XML
 ======================================================= 
  <!-- MRAP -->
-  <type name="MRAP_4x4">
+  <type name="MRAP_Cougar">
     <nominal>29</nominal>
     <lifetime>3888000</lifetime>
     <restock>0</restock>
@@ -50,20 +50,7 @@ TYPES.XML
     <tag name="floor" />
     <usage name="Industrial" />
   </type>
-  <type name="mrap_doors_cargo1">
-    <nominal>22</nominal>
-    <lifetime>2700</lifetime>
-    <restock>0</restock>
-    <min>10</min>
-    <quantmin>-1</quantmin>
-    <quantmax>-1</quantmax>
-    <cost>100</cost>
-    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
-    <category name="vehiclesparts" />
-    <tag name="floor" />
-    <usage name="Industrial" />
-  </type>
-  <type name="mrap_doors_cargo2">
+  <type name="mrap_doors_trunk0">
     <nominal>22</nominal>
     <lifetime>2700</lifetime>
     <restock>0</restock>
@@ -107,7 +94,7 @@ PROFILES/TRADERS
 ======================================================= 
  <!-- MRAP -->  
     <Category> Vehicles
-		MRAP_4x4,      				    V,      700000,  30000
+		MRAP_Cougar,      				    V,      700000,  30000
 
 	<Category> Vehicle Parts
         mrap_wheel,             		*,      225,   100
@@ -120,7 +107,7 @@ PROFILES/TRADERS
 
 PROFILES/TRADERS/VEHILCE PARTS
 ======================================================= 
-<VehicleParts>	MRAP_4x4
+<VehicleParts>	MRAP_Cougar
 		SparkPlug
 		CarBattery
 		CarRadiator
@@ -142,7 +129,7 @@ PROFILES/TRADERS/VEHILCE PARTS
 CFGSPAWNABLETYPES.XML
 ======================================================= 
  <!-- MRAP -->  
-	<type name="MRAP_4x4">
+	<type name="MRAP_Cougar">
        <attachments chance="1.00">
             <item name="SparkPlug" chance="0.50" />
         </attachments>
@@ -195,7 +182,7 @@ CFGSPAWNABLETYPES.XML
 
 CFGEVENTSPAWNS.XML
 ======================================================= 
-    <event name="VehicleMRAP_4x4" >
+    <event name="VehicleMRAP_Cougar" >
 		<pos x="7735.35498" z="14834.541016" a="275.906708" />
 		<pos x="2276.999268" z="15255.469727" a="55.468719" />
 		<pos x="1522.324341" z="14049.371094" a="119.360489" />
@@ -234,7 +221,7 @@ CFGEVENTSPAWNS.XML
 EVENTS.XML
 ======================================================= 
  <!-- MRAP --> 	
-	<event name="MRAP_4x4">
+	<event name="MRAP_Cougar">
         <nominal>10</nominal>
         <min>7</min>
         <max>13</max>
